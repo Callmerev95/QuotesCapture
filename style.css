@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap");
+
+.left ion-icon {
+  display: flex;
+  padding: 5px 10px;
+  font-size: 30px;
+  color: #444242;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Xanh Mono", monospace;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#activity {
+  font-size: 2.5em;
+  font-weight: 800;
+  text-align: center;
+  font-style: italic;
+  font-family: "Satisfy", cursive;
+}
+
+#type {
+  background-color: rgba(33, 171, 196, 0.788);
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  padding: 8px 16px;
+  display: none;
+  font-family: "Xanh Mono", monospace;
+}
+
+#capture ion-icon {
+  font-size: 30px;
+  padding: 5px 3px;
+  color: rgba(17, 17, 17, 0.911);
+}

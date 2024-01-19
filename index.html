@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuotesCapture</title>
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/onsenui/css/onsen-css-components.min.css"
+    />
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  </head>
+  <body>
+    <!-- ons-page -->
+    <ons-page>
+      <!-- ons-toolbar -->
+      <ons-toolbar style="background-color: rgba(51, 50, 51, 0.199)">
+        <div class="left">
+          <ion-icon name="logo-octocat"></ion-icon>
+        </div>
+        <div class="center" style="color: #444242">Quotes Capture</div>
+        <div class="right">
+          <ons-toolbar-button>
+            <a download id="capture"
+              ><ion-icon name="camera-outline"></ion-icon
+            ></a>
+          </ons-toolbar-button>
+        </div>
+      </ons-toolbar>
+      <!-- ons-toolbar end -->
+
+      <!-- ons-fab -->
+      <ons-fab
+        style="background-color: rgba(29, 28, 29, 0.548)"
+        position="bottom right"
+        onclick="generateIdea()"
+      >
+        <ons-icon icon="md-plus"></ons-icon>
+      </ons-fab>
+      <!-- ons-fab end -->
+
+      <!-- main content -->
+      <div id="result">
+        <h1 id="activity"></h1>
+        <p id="type"></p>
+      </div>
+      <!-- main content end -->
+    </ons-page>
+    <!-- ons-page end -->
+    <script src="main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
