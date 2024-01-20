@@ -1,16 +1,16 @@
 async function generateIdea() {
-  const url = "https://www.boredapi.com/api/activity";
+  const url = "https://api.quotable.io/quotes/random";
   const respone = await fetch(url);
   const api = await respone.json();
 
   const result = document.getElementById("result");
-  const activity = document.getElementById("activity");
-  const type = document.getElementById("type");
+  const content = document.getElementById("content");
+  const author = document.getElementById("author");
   const capture = document.getElementById("capture");
 
-  activity.textContent = api.activity;
-  type.textContent = api.type;
-  type.style.display = "block";
+  content.textContent = api[0].content;
+  author.textContent = api[0].author;
+  author.style.display = "block";
 
   let count = 0;
 
